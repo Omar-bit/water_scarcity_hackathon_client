@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.greenField {
+  background: url('./assets/green_field.png') no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 36px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #6a9c89 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #6a9c89;
+  border-radius: 100px;
+  border: 15px solid #c4dad2;
+}
+.fadeIn {
+  animation: fadeIn 0.7s ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: linear-gradient(white 1px, transparent 1px),
+    linear-gradient(to right, white 1px, #6a9c89 1px);
+  background-size: 75px 75px;
+}
+/*bae3d4*/
